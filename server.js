@@ -21,6 +21,7 @@ app.get('/', (req, res)=>{
 app.use('/person', personRoutes)
 app.use('/menu', menuRouter)
 
+// comment for testing purpose
 app.listen(process.env.PORT, ()=>{
     console.log("Listening on port 3000...");
 })
