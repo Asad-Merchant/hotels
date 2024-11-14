@@ -8,7 +8,7 @@ import menuRouter from './routes/menu.route.js'
 import dotenv from 'dotenv'
 
 dotenv.config()
-
+const port = process.env.PORT || 3000
 const app = express()
 
 app.use(bodyParser.json())
@@ -22,7 +22,7 @@ app.use('/person', personRoutes)
 app.use('/menu', menuRouter)
 
 // comment for testing purpose
-const port = process.env.PORT || 3000
+
 app.listen(port, ()=>{
     console.log("Listening on port 3000...");
 })
