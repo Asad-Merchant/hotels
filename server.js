@@ -22,7 +22,8 @@ app.use('/person', personRoutes)
 app.use('/menu', menuRouter)
 
 // comment for testing purpose
-app.listen(process.env.PORT, ()=>{
+const port = process.env.PORT || 3000
+app.listen(port, ()=>{
     console.log("Listening on port 3000...");
 })
 
